@@ -1,0 +1,13 @@
+[
+    {
+      "event_name": "Tech Toxin",
+      "desc": "Put your chemistry knowledge to test in the Tech Toxin arena! Solve chemical puzzles, unlock clues, and escape before time runs out escape room experience. Gather your friends, collaborate, and use your chemistry skills to outsmart the room. Can you unravel the mysteries and escape in time?",
+      "img_path": "/static/img/performer/tektoxin.png"
+    },
+    {
+      "event_name": "SharkTank",
+      "desc": "Join us for an exciting event inspired by Shark Tank! Teams will compete in rounds that challenge their creativity, persuasion skills, and entrepreneurial flair Elevator Pitch: Craft a compelling pitch to grab attention in seconds. Networking: Build crucial connections to support your entrepreneurial journey. Crisis Management: Navigate unexpected challenges with quick thinking.Final Investment Round: Pitch to judges for a chance to win prizes and acclaim. Get ready to witness innovation in action and entrepreneurial spirit in full swing!",
+      "img_path": "/static/img/performer/shark.png"
+    }
+  ]
+  
