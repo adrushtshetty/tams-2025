@@ -6245,3 +6245,95 @@ html, body {
 }
 
 /*# sourceMappingURL=style.css.map */
+
+#add_event_box {
+  /* font-size: 50px; */
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center; 
+  border-style: dashed;
+  border-color: #ff8c32;
+  height: 25em;
+  width: 50em;
+  overflow: hidden;
+  
+  transition: transform 0.3s ease;
+}
+
+#add_event_box:hover {
+  transform: scale(1.1)
+}
+
+#add_event_content h1{
+  text-align: center;
+  font-size: 3.5em;
+}
+
+.form_box {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.form_menu {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  width: 400px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.submit_btn_event {
+  border: 0;
+  margin-right: 10px;
+  border-radius: 10px;
+  width: 4.5em;
+}
+
+.add_event_form_elements {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+#form_image_btn {
+  border: 1px solid #676774;
+  padding: 6px;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.4s ease;
+}
+
+#form_image_btn:hover {
+  background-color: #ff8c32;
+  color: #fff;
+}
+
+.delete_btn_event{
+  border: 0;
+  margin-right: 10px;
+  border-radius: 10px;
+  width: 4.5em;
+  color: #fff;
+  float: right;
+}
+
+.register_btn {
+  display: block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: blue;
+  background-color: orange;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+}

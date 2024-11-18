@@ -2,18 +2,19 @@ import React from 'react';
 import Header from './components/Headers';
 import BannerOther from './components/BannersOther';
 
-import Events from './components/Events';
+import AdminEvents from './components/AdminEvents';
+import AddEvents from './components/AddEvents';
 import Footer from './components/Footer';
 
-function EventsPage() {
+function EventsAdmin() {
   return (
     <>
       <Header />
       <BannerOther title="Events" />
-      <Events/>
-      <Footer />
+      <AdminEvents/>
+      <AddEvents/>
     </>
   );
 }
 
-export default EventsPage;
+export default EventsAdmin;

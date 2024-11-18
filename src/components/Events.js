@@ -1,7 +1,22 @@
 import React, { useEffect, useState } from "react";
-import eventsData from "../eventsData.json";
 
-const Events = () => {const [events, setEvents] = useState([]);useEffect(() => {setEvents(eventsData);}, []);
+const Events = () => {
+    const [events, setEvents] = useState([]);
+  useEffect(() => {
+    const fetchEvents = async () =>{
+        try {
+            const response = await fetch('/api/events');
+            const data = await response.json();
+            setEvents(data);
+        } catch(error){
+            console.error('Error fetching events: ',error);
+        }
+    };
+
+    fetchEvents();
+  }, []);
+
+
   return (
     <div class="performar_area black_bg">
         <div class="container">
@@ -35,16 +50,7 @@ const Events = () => {const [events, setEvents] = useState([]);useEffect(() => {
                                     href="https://forms.gle/DVBJk6t1zQarWdXs7"
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    style={{
-                                        display: "inline-block",
-                                        padding: "10px 20px",
-                                        fontSize: "16px",
-                                        color: "blue",
-                                        backgroundColor: "orange",
-                                        textAlign: "center",
-                                        textDecoration: "none",
-                                        borderRadius: "5px"
-                                    }}
+                                    className="register_btn"
                                     >
                                     click here to register
                                     </a>
